@@ -1,6 +1,7 @@
+
 * {
-				margin: 0;
-				padding: 0;
+				margin: 0px;
+				padding: 0px;
 			}
 
 			a {
@@ -25,37 +26,52 @@
 				background-size: cover;
 				background-attachment: fixed;
 			}
-
+			
+			/* 中间白色背景元素 */
 			.content {
+				/* 控制中间背景组件宽度 */
 				width: 900px;
+				/* 控制中间背景组件长度 */
 				height: 500px;
-				margin: 200px auto 0 auto;
-				border-radius: 10000px;
+				/* 控制中间背景的四边边界 */
+				margin: 200px auto 200px auto;
+				/* 控制中间白色框曲折 */
+				border-radius: 10px 220px / 120px;
+				/* 控制中间组件RGBA */
 				background-color: rgba(236, 236, 236, 0.59);
+				/* 过渡可以为一个元素在不同状态之间切换的时候定义不同的过渡效果 */
 				transition: all 1.0s;
+				/* 控制中间背景的阴影 */
 				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
 			}
-
+			
+			/*控制头像元素*/
 			.content img {
 				float: left;
+				/* 中间图像的长 */
 				width: 200px;
+				/* 中间图像的宽 */
 				height: 200px;
-				margin: 100px 0px 0px 350px;
+				/* 控制中间图像的四边边界 */
+				margin: 65px 0px -22px 350px;
+				/* 控制中间图像曲折 */
 				border-radius: 100px;
-
-			}/*控制头像元素*/
-
+			}
+			
+			/* 控制后方阴影 */
 			.content:hover {
 				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
 			}
-
+			
+			/*控制下方互动元素右*/
 			.content_r {
 				float: right;
 				width: 580px;
-				margin: 50px 60px 0 0;
+				margin: 30px 60px 0 0;
 				/*	background-color: pink;*/
-			}/*控制页面控件坐标*/
-
+			}
+			
+			/*控制下方互动元素左*/
 			.content_l {
 				float: left;
 				width: 75%;
@@ -84,6 +100,14 @@
 
 			.link {
 				margin-top: 10px;
+			}
+			
+			.zf{
+				display: block;
+				float: none;
+				width: auto;
+				height: 20px;
+				margin: 10px 65px 50px 20px;
 			}
 
 			.link a {
@@ -125,4 +149,5 @@
 			.Green{
 				background-color: black;
 			}
+			
 			
